@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="794.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.Hardware.Controller.ItemMenuController">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="112.0" prefWidth="834.0" spacing="60.0" style="-fx-background-color: #260f33;">
+               <children>
+                  <JFXButton fx:id="AddItem" alignment="TOP_CENTER" contentDisplay="TOP" onAction="#AddItem_OnAction" prefHeight="88.0" prefWidth="85.0" style="-fx-background-color: #524451; -fx-border-radius: 40; -fx-background-radius: 40; -fx-border-color: #ffffff;" text=" Add&#10; Item" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Resourses/icons8-add-tag-96.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="FindItem" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="385.0" layoutY="16.0" onAction="#FindItem_OnAction" prefHeight="88.0" prefWidth="85.0" style="-fx-background-color: #524451; -fx-border-radius: 40; -fx-background-radius: 40; -fx-border-color: #ffffff;" text=" Find&#10; Item" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Resourses/icons8-price-tag-96.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="UpdateItem" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="312.0" layoutY="16.0" onAction="#UpdateItem_OnAction" prefHeight="88.0" prefWidth="85.0" style="-fx-background-color: #524451; -fx-border-radius: 40; -fx-background-radius: 40; -fx-border-color: #ffffff;" text="Update&#10;  Item" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Resourses/icons8-update-96.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="RemoveItem" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="240.0" layoutY="16.0" onAction="#RemoveItem_OnAction" prefHeight="88.0" prefWidth="85.0" style="-fx-background-color: #524451; -fx-border-radius: 40; -fx-background-radius: 40; -fx-border-color: #ffffff;" text="Remove&#10;   Item" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Resourses/icons8-remove-tag-96.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <Separator opacity="0.45" prefHeight="0.0" prefWidth="834.0" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="112.0" prefWidth="834.0" spacing="60.0" style="-fx-background-color: #260f33;">
+               <children>
+                  <JFXButton fx:id="AddRentItem" alignment="TOP_CENTER" contentDisplay="TOP" onAction="#AddRentItem_OnAction" prefHeight="88.0" prefWidth="85.0" style="-fx-background-color: #406074; -fx-border-radius: 40; -fx-background-radius: 40; -fx-border-color: #ffffff;" text="    Add &#10; Rent Item" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Resourses/icons8-add-tag-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="FindRentItem" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="385.0" layoutY="16.0" onAction="#FindRentItem_OnAction" prefHeight="88.0" prefWidth="85.0" style="-fx-background-color: #406074; -fx-border-radius: 40; -fx-background-radius: 40; -fx-border-color: #ffffff;" text="   Find&#10;Rent Item" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Resourses/icons8-price-tag-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="UpdateRentItem" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="312.0" layoutY="16.0" onAction="#UpdateRentItem_OnAction" prefHeight="88.0" prefWidth="85.0" style="-fx-background-color: #406074; -fx-border-radius: 40; -fx-background-radius: 40; -fx-border-color: #ffffff;" text="  Update&#10;Rent Item" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Resourses/icons8-restart-480.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="RemoveRentItem" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="240.0" layoutY="16.0" onAction="#RemoveRentItem_OnAction" prefHeight="88.0" prefWidth="85.0" style="-fx-background-color: #406074; -fx-border-radius: 40; -fx-background-radius: 40; -fx-border-color: #ffffff;" text=" Remove&#10;Rent Item" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Resourses/icons8-remove-tag-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <BorderPane fx:id="ItemMenuBorderPane" BorderPane.alignment="CENTER">
+         <center>
+            <ImageView fitHeight="567.0" fitWidth="834.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resourses/carlos-irineu-da-costa-eMc0lpn1P60-unsplash.jpg" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

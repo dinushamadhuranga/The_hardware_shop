@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="707.0" style="-fx-background-color: #20120f;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.Hardware.Controller.LoginController">
+    <stylesheets>
+        <URL value="@/lk/Hardware/Resourses/Main.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="382.0" layoutY="46.0" prefHeight="311.0" prefWidth="303.0" style="-fx-background-color: #ff0000;">
+         <children>
+            <Label layoutX="126.0" layoutY="14.0" prefHeight="36.0" prefWidth="67.0" text="Login">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="username" focusColor="#733e82" layoutX="20.0" layoutY="94.0" prefHeight="31.0" prefWidth="268.0" promptText="user name" unFocusColor="#ebe8e8" />
+            <JFXButton fx:id="login" layoutX="33.0" layoutY="222.0" onAction="#login_OnAction" prefHeight="14.0" prefWidth="249.0" style="-fx-background-color: #df6262;" text="login">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Hyperlink fx:id="forgotpassword" layoutX="98.0" layoutY="270.0" prefHeight="27.0" prefWidth="124.0" text="Forgot Password" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="MS Reference Specialty" size="13.0" />
+               </font>
+            </Hyperlink>
+            <JFXPasswordField fx:id="password" focusColor="#3c3c8d" layoutX="22.0" layoutY="156.0" prefHeight="31.0" prefWidth="268.0" promptText="Password" unFocusColor="WHITE" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="410.0" fitWidth="606.0" layoutX="-239.0" layoutY="7.0" opacity="0.21" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resourses/lake-mcdonald-glacier-national-park-uh.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="47.0" layoutY="46.0" text="Making your Life Simple" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="94.0" text="Liyanage Hardware prides itself &#10;on its quality and performance. &#10;The sole vision of the company&#10;is to deliver products and services &#10;conforming to International standards&#10; and satisfying the requirements and &#10;the expectations of our customers &#10;in respect of quality, cost, performance&#10;, safety and reliability" textFill="WHITE" />
+      <JFXButton fx:id="signAdministrator" layoutX="95.0" layoutY="326.0" text="Sign as Administrator" textFill="#ad691c" />
+   </children>
+</AnchorPane>

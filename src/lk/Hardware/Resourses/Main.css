@@ -1,0 +1,11 @@
+.jfx-text-field
+{
+-fx-text-inner-color: white;
+}
+
+
+.default-color0.chart-bar { -fx-bar-fill: blue; }
+
+.button{
+     -fx-background-color: transparent; 
+}

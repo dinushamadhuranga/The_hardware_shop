@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="794.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.Hardware.Controller.HomePageController">
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="556.0" layoutY="535.0" style="-fx-background-color: #f0f0f0;">
+               <children>
+                  <BarChart fx:id="BarChart1" layoutY="-1.0" prefHeight="250.0" prefWidth="272.0" styleClass="default-color0" stylesheets="@../Resourses/Main.css" title="Item selling details">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children>
+            </Pane>
+            <Pane layoutX="554.0" layoutY="275.0" style="-fx-background-color: #f0f0f0;">
+               <children>
+                  <LineChart fx:id="LineChart1" prefHeight="244.0" prefWidth="276.0" title="Orders">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </LineChart>
+               </children>
+            </Pane>
+            <Pane layoutX="281.0" layoutY="534.0" style="-fx-background-color: #f0f0f0;">
+               <children>
+                  <BarChart fx:id="BarChart2" layoutX="-2.0" layoutY="2.0" prefHeight="250.0" prefWidth="272.0" styleClass="jfx-text-field" stylesheets="@../Resourses/Main.css" title="Rent Item selling details">
+                     <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis side="LEFT" />
+                     </yAxis>
+                  </BarChart>
+               </children>
+            </Pane>
+            <Pane layoutX="283.0" layoutY="275.0" prefHeight="244.0" prefWidth="267.0" style="-fx-background-color: #f0f0f0;">
+               <children>
+                  <LineChart fx:id="LineChart2" prefHeight="244.0" prefWidth="267.0" title="Rents">
+                     <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis side="LEFT" />
+                     </yAxis>
+                  </LineChart>
+               </children>
+            </Pane>
+            <TableView fx:id="Renttable" layoutX="12.0" layoutY="25.0" prefHeight="236.0" prefWidth="815.0">
+               <columns>
+                  <TableColumn fx:id="rid_column" prefWidth="114.0" text="Rent id" />
+                  <TableColumn fx:id="cid_column" prefWidth="121.0" text="customer id" />
+                  <TableColumn fx:id="cname_column" prefWidth="277.0" text="        customer name" />
+                  <TableColumn fx:id="rtid_column" prefWidth="121.0" text="rent taken id" />
+                  <TableColumn fx:id="rtdate_column" prefWidth="158.0" text="rent taken date" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
